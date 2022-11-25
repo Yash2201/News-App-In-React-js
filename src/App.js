@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
 
 export default class App extends Component {
-  pageSize = '21';
+  pageSize = '6';
   render() {
     return (
       <div>
@@ -26,7 +26,6 @@ export default class App extends Component {
             <Route exact path="/sports" element={<News key="sports" pageSize={this.pageSize} country="in" category="sports" />}  />
             <Route exact path="/technology" element={<News key="technology" pageSize={this.pageSize} country="in" category="technology" />}  />
           </Routes>
-          
         </Router>
       </div>
     )
